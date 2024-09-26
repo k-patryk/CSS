@@ -1,0 +1,56 @@
+.container {
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes changeText {
+	0% {
+		content: "10";
+	}
+	7% {
+		content: "9";
+	}
+	14% {
+		content: "8";
+	}
+	21% {
+		content: "7";
+	}
+	28% {
+		content: "6";
+	}
+	35% {
+		content: "5";
+	}
+	42% {
+		content: "4";
+	}
+	49% {
+		content: "3";
+	}
+	56% {
+		content: "2";
+	}
+	63% {
+		content: "1";
+	}
+	70% {
+		content: "Finished";
+	}
+	100% {
+		content: "Finished";
+	}
+}
+
+.text:after {
+	animation-name: changeText;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	font: 800 40px system-ui;
+	content: counter(count);
+}

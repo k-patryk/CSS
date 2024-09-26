@@ -1,0 +1,45 @@
+/* * {
+	box-sizing: border-box;
+} */
+
+.row {
+	background-color: red;
+	border: 3px solid grey;
+	height: 100px;
+}
+
+.mid {
+	height: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aside {
+	width: 20%;
+	border: 3px solid lightblue;
+}
+
+.main {
+	width: 60%;
+	border: 3px solid yellow;
+}
+
+@media (max-width: 992px) {
+	.left {
+		width: 100%;
+		order: 1;
+	}
+	.main {
+		width: 80%;
+	}
+}
+
+@media (max-width: 768px) {
+	.aside,
+	.main {
+		width: 100%;
+	}
+	.right {
+		order: 1;
+	}
+}

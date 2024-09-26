@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 900px;
+	height: 900px;
+	background-color: red;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	border: 3px solid white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.navyblue {
+	background-color: #00202e;
+}
+
+.darkblue {
+	background-color: #003f5c;
+}
+
+.royalblue {
+	background-color: #2c4875;
+}
+
+.purple {
+	background-color: #8a508f;
+}
+
+.magenta {
+	background-color: #bc5090;
+}
+
+.brightred {
+	background-color: #ff6361;
+}
+
+.orange {
+	background-color: #ff8531;
+}
+
+.amber {
+	background-color: #ffa600;
+}
+
+.yellow {
+	background-color: #ffd380;
+}

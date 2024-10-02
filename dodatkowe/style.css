@@ -1,0 +1,94 @@
+* {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+a {
+	color: inherit; /* Inherit color */
+	text-decoration: none; /* Remove underline */
+}
+
+a h3 {
+	color: inherit; /* Ensure the h3 inherits color */
+	text-decoration: none; /* Remove underline */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif; /* Headers */
+}
+
+p,
+span,
+div {
+	font-family: "Roboto Slab", serif; /* Text */
+}
+
+em,
+i {
+	font-family: "Droid Serif", serif; /* Italic text */
+}
+
+i {
+	color: #fed136;
+	padding-block: 30px;
+	padding-inline: 80px;
+	display: inline-block;
+	scale: 200%;
+}
+.portfolio {
+	background-color: #f8f9fa;
+}
+
+p {
+	color: #6c757d;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box {
+	background-color: white;
+	border: 10px solid #f8f9fa;
+	border-radius: 20px;
+	width: 30%;
+	height: 50%;
+}
+
+img {
+	width: 100%;
+	height: 80%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+section {
+	padding: 5%;
+}
+
+@media screen and (max-width: 992px) {
+	.box {
+		width: 49%;
+	}
+}
+@media screen and (max-width: 668px) {
+	.box {
+		width: 100%;
+	}
+}
+/* @media screen and (max-width: 480px) {
+	.box {
+		width: 100%;
+	}
+} */

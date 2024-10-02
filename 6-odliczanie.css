@@ -1,13 +1,13 @@
-.container {
+/* .counter {
 	width: 200px;
 	height: 200px;
 	background-color: lightblue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
-@keyframes changeText {
+/* @keyframes changeText {
 	0% {
 		content: "10";
 	}
@@ -53,4 +53,115 @@
 	animation-iteration-count: infinite;
 	font: 800 40px system-ui;
 	content: counter(count);
+} */
+
+/* @property --num {
+	syntax: "<integer>";
+	initial-value: 0;
+	inherits: false;
+}
+
+div {
+	transition: --num 10s;
+	counter-set: num var(--num);
+	font: 800 40px system-ui;
+}
+div::after {
+	content: counter(num);
+}
+div:hover {
+	--num: 10;
+}
+
+body {
+	margin: 2rem;
+} */
+
+/* @property --num {
+	syntax: "<integer>";
+	initial-value: 0;
+	inherits: false;
+}
+
+div {
+	animation: counter 2s infinite alternate ease-in-out;
+	counter-reset: num var(--num);
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+div::after {
+	content: counter(num);
+}
+
+@keyframes counter {
+	from {
+		--num: 0;
+	}
+	to {
+		--num: 10;
+	}
+} */
+
+/* :root {
+	--num: 0; /* Set initial value for the custom property */
+
+.parent {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background-color: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.number {
+	position: absolute;
+	opacity: 0;
+	animation-name: counter;
+	animation-duration: 1s;
+}
+
+@keyframes counter {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.number9 {
+	animation-delay: 1s;
+}
+.number8 {
+	animation-delay: 2s;
+}
+.number7 {
+	animation-delay: 3s;
+}
+.number6 {
+	animation-delay: 4s;
+}
+.number5 {
+	animation-delay: 5s;
+}
+.number4 {
+	animation-delay: 6s;
+}
+.number3 {
+	animation-delay: 7s;
+}
+.number2 {
+	animation-delay: 8s;
+}
+.number1 {
+	animation-delay: 9s;
+}
+
+.text {
+	animation-delay: 10s;
 }
